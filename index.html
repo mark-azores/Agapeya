@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- CAROUSEL -->
+    <link rel="stylesheet" href="assets/css/carousel.css">
+   
+    <title>Agapeya Towns</title>
+</head>
+
+<body>
+    <!-- https://youtu.be/twRLgPsP1H0 -->
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <!-- Holux <i class='bx bxs-home-alt-2'></i> -->
+                <img src="assets/img/agapeyaLogo.png" alt="Logo">
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt-2'></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">
+                            <i class='bx bx-building-house'></i>
+                            <span>Property</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#value" class="nav__link">
+                            <i class='bx bx-award'></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-phone'></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+            <!-- <a href="#" class="button nav__button">
+                Subscribe
+            </a> -->
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Discover <br> Most Suitable <br> Property
+                    </h1>
+                    <p class="home__description">
+                        Find a variety of properties that suit you very easily,
+                        forget all difficulties in finding a residence for you
+                    </p>
+
+        
+                </div>
+
+                <div class="home__images">
+                    <!-- <div class="home__orbe"></div> -->
+
+                    <!-- <div class="home__img">
+                        <img src="assets/img/home.jpg" alt="">
+                    </div> -->
+                    
+                    <div class="slideshow-container">
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                            <span class="dot" onclick="currentSlide(4)"></span> 
+                          </div>
+                        
+                          <br>
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="assets/img/slide1.jpg" style="width:100%">
+                          
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="assets/img/slide2.jpg" style="width:100%">
+                          
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="assets/img/slide3.jpg" style="width:100%">
+                          
+                        </div>
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">4 / 4</div>
+                          <img src="assets/img/slide4.jpg" style="width:100%">
+                          
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                        
+
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <!--==================== LOGOS ====================-->
+        <section class="logos section">
+            <div class="logos__container container grid">
+                <div class="logos__img">
+                    <img src="assets/img/agapeyaLogo.png" alt="">
+                </div>
+                <div class="logos__img">
+                    <img src="assets/img/gorealty.png" alt="">
+                </div>
+                <div class="logos__img">
+                    <img src="assets/img/elanvital.png" alt="">
+                </div>
+                <!-- <div class="logos__img">
+                    <img src="assets/img/logo4.png" alt="">
+                </div> -->
+            </div>
+        </section>
+
+        <!--==================== POPULAR ====================-->
+        <section class="popular section" id="popular">
+            <div class="container">
+                <span class="section__subtitle">Elevating Comfort</span>
+                <h2 class="section__title">
+                    Amenities<span>.</span>
+                </h2>
+
+                <div class="popular__container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/swimming-pool.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <!-- <h2 class="popular__price">
+                                    <span>$</span>66,356
+                                </h2> -->
+                                <h3 class="popular__title">
+                                    Swimming Pool
+                                </h3>
+                                <p class="popular__description">
+                                    Dive into luxury with our refreshing swimming pool amenity.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/basketball-hoop.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <!-- <h2 class="popular__price">
+                                    <span>$</span>35,159
+                                </h2> -->
+                                <h3 class="popular__title">
+                                    Basketball Court
+                                </h3>
+                                <p class="popular__description">
+                                    Shoot hoops and stay active with our on-site basketball court.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/playground.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <!-- <h2 class="popular__price">
+                                    <span>$</span>75,043
+                                </h2> -->
+                                <h3 class="popular__title">
+                                   Playground
+                                </h3>
+                                <p class="popular__description">
+                                    Let your kids play and explore in our safe and fun-filled playground.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/church.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <!-- <h2 class="popular__price">
+                                    <span>$</span>62,024
+                                </h2> -->
+                                <h3 class="popular__title">
+                                    Church
+                                </h3>
+                                <p class="popular__description">
+                                    Find peace and community spirit with our on-site church.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/city.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <!-- <h2 class="popular__price">
+                                    <span>$</span>47,043
+                                </h2> -->
+                                <h3 class="popular__title">
+                                    Club House
+                                </h3>
+                                <p class="popular__description">
+                                    Experience leisure and social gatherings at our vibrant club house.
+                                </p>
+                            </div>
+                        </article>
+                        
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/guard.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <!-- <h2 class="popular__price">
+                                    <span>$</span>47,043
+                                </h2> -->
+                                <h3 class="popular__title">
+                                    2 Entrance Gates
+                                </h3>
+                                <p class="popular__description">
+                                    Experience a warm welcome with our dual entrance gates.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FLOOR PLAN ============================-->
+
+
+        
+        <section class="home section" id="home">
+            <div>
+            <h2 class="section__title" style="text-align: center;">
+                FLOOR PLAN
+            </h2>
+
+            <div class="home__container container grid">
+
+            
+                <!-- <div class="home__data">
+                   
+                    <img src="assets/img/1stFloor.jpg" style="width:100%">
+                    <span style="text-align: center;"><h2>1st Floor</h2></span>
+                </div>
+                
+                <div class="home__data">
+                    
+                    <img src="assets/img/2ndFloor.jpg" style="width:100%">
+                    <span style="text-align: center;"><h2>2nd Floor</h2></span>
+                </div> -->
+
+                <div class="home__data">
+                    <img src="assets/img/1stFloor.jpg" alt="1st Floor Image" class="fullScreenable">
+                    <span class="fullScreenButton">&times;</span>
+                    <h2>1st Floor</h2>
+                </div>
+                
+                <div class="home__data">
+                    <img src="assets/img/2ndFloor.jpg" alt="2nd Floor Image" class="fullScreenable">
+                    <span class="fullScreenButton">&times;</span>
+                    <h2>2nd Floor</h2>
+                </div>
+                
+                
+                
+
+                <!-- <div class="home__images">
+              
+
+                    <div class="home__img">
+                        <img src="assets/img/2ndFloor.jpg" alt="">
+                    </div>
+                    
+
+                </div> -->
+            </div>
+        </div>
+        </section>
+
+
+        <!-- =======PROPERTY DETAILS====== -->
+
+        <section class="home section" id="home">
+            <div>
+            <h2 class="section__title" style="text-align: center;">
+                PROPERTY DETAILS
+            </h2>
+
+            <div class="home__container container grid">
+
+            
+                <div class="home__data">
+                   
+                    <ul id="propertyDetail">
+                        <li>Lot Area: 70 sqm</li>
+                        <li>Floor Area: 50 sqm</li>
+                        <li>Turnover Type: Semi-Furnished</li>
+                        <li>Unit Type: Semi-Duplex</li>
+                        <ul>
+                          <li>3 Bedrooms</li>
+                          <li>2 Carport</li>
+                          <li>1 Toilet & Bath</li>
+                          <li>Service Area</li>
+                        </ul>
+                      </ul>
+                      
+                </div>
+                
+                <div class="home__data">
+                    <div class="SalesMap-container">
+                        <img src="assets/img/salesMap.jpg" style="width: 100%;" alt="Sales Map" class="fullScreenable">
+                        <span class="fullScreenButton">&times;</span>
+                        <span style="text-align: center;"><h2>Sales Map</h2></span>
+                    </div>
+                </div>
+                
+                
+                
+                
+    
+
+               
+            </div>
+        </div>
+
+
+
+        <div class="home__container container grid" style="margin-top: 3rem;">
+            <div class="home__data">
+                <video width="100%" autoplay controls>
+                    <source src="assets/img/guideVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Travel Guide to Agapeya Towns</h2>
+            </div>
+            
+            <div class="home__data">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.0846866114994!2d121.09481357355014!3d14.189817987004883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd633a335e9d1f%3A0x6e1fbe63f8b0138c!2sAgapeya%20Towns%20by%20Elanvital!5e0!3m2!1sen!2sph!4v1712927796921!5m2!1sen!2sph" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+        
+
+        </section>
+
+        <h2 class="section__title" style="text-align: center; margin-bottom: 4rem;">
+            PLACES THAT MATTER <i class="bx bx-map"></i>
+        </h2>
+        <div class="landmarks-container">
+            <div class="list-group">
+              <h2>Educational Institutions</h2>
+              <ul>
+                <li>Calamba Central School (<b>2.84km</b>)</li>
+                <li>Don Bosco College Canlubang (<b>2.98km</b>)</li>
+                <li>Immaculate Conception Catholic School - Calamba (<b>5.84km</b>)</li>
+                <li>Malayan Colleges Laguna (<b>6.26km</b>)</li>
+                <li>Saint Benilde International School (<b>6.36km</b>)</li>
+                <li>Calamba City Science High School (<b>7.16km</b>)</li>
+                <li>Calamba Integrated School (<b>7.92km</b>)</li>
+              </ul>
+            </div>
+            <div class="list-group">
+              <h2>Industrial</h2>
+              <ul>
+                <li>Carmelray Industrial Park 1 (<b>2.80km</b>)</li>
+                <li>Filinvest Technology Park (<b>2.47km</b>)</li>
+                <li>Silangan Industrial Park (<b>3.75km</b>)</li>
+                <li>Carmelray Industrial Park 2 (<b>4.10km</b>)</li>
+                <li>Batino Light Industrial Park (<b>4.44km</b>)</li>
+                <li>Allegis Information Technology Park (<b>4.58km</b>)</li>
+                <li>Lepanto Industrial Complex (<b>5.10km</b>)</li>
+              </ul>
+            </div>
+            <div class="list-group">
+              <h2>Commercial</h2>
+              <ul>
+                <li>iMall Canlubang (<b>2.88km</b>)</li>
+                <li>Farmers Plaza (<b>4.18km</b>)</li>
+                <li>Super Metro Calamba (<b>5.69km</b>)</li>
+                <li>Waltermart Cabuyao (<b>6.23km</b>)</li>
+                <li>SM Calamba (<b>6.30km</b>)</li>
+                <li>City Mall Calamba (<b>6.80km</b>)</li>
+                <li>Ayala Malls Solenad (<b>6.83km</b>)</li>
+                <li>Centro Mall Cabuyao (<b>7.00km</b>)</li>
+                <li>Carolina Mall (<b>7.35km</b>)</li>
+              </ul>
+            </div>
+            <div class="list-group">
+              <h2>Major Roads, Highways, and Expressway Exits</h2>
+              <ul>
+                <li>SLEX Canlubang Exit</li>
+                <li>SLEX Calamba Toll Plaza</li>
+                <li>SLEX Cabuyao Exit</li>
+                <li>SLEX Silangan Northbound Entry</li>
+                <li>SLEX Batino Exit Calamba Laguna</li>
+                <li>Manila South Road</li>
+                <li>Pan Philippine Highway</li>
+              </ul>
+            </div>
+            <div class="list-group">
+              <h2>Transportation Hubs</h2>
+              <ul>
+                <li>SM Calamba Transport Terminal</li>
+                <li>Turbina Bus Terminal</li>
+                <li>PNR Calamba</li>
+              </ul>
+            </div>
+            <div class="list-group">
+              <h2>Townships</h2>
+              <ul>
+                <li>Nuvali</li>
+                <li>Ayala Greenfield Estates</li>
+              </ul>
+            </div>
+          </div>
+        <!--==================== VALUE ====================-->
+        <!--==================== ABOUT US ====================-->
+
+        <section class="value section" id="value">
+
+            <article class="aboutUs">
+            <h2 class="section__title" style="text-align: center; margin-bottom: 4rem;">
+                ABOUT US
+            </h2>
+
+            <h2 class="aboutDesc">Who are we?</h2>
+            <img src="assets/img/agapeyaLogo.png" style="width: 40%; display: block; margin: 0 auto;" alt="Sales Map">
+            <p> &emsp;Agapeya Towns by Elanvital is a 22-hectare project
+                located in Brgy. Majada, Calamba, Laguna Its strategic
+                location gives you access to places that matter. This
+                vibrant community features twin home units, perfect for
+                you and your family.</p>
+            <br>
+            
+            <h2 class="aboutDesc">Who are the developer?</h2> 
+            <img src="assets/img/elanvital.png"  class="elanvitalAbt" style="width: 30%; display: block; margin: 0 auto;" alt="Sales Map">
+            <p> &emsp; Elanvital Enclaves provides management, sales and marketing services to its partner-developer Raemulan Lands, Inc., in various residential developments in Cavite and Laguna. To empower families to have the home they deserve, Elanvital Enclaves offers value-for-money quality modern homes suitable for growing middle-income Filipino families.</p>
+            <br>
+            <p class="p1">  &emsp;From the French words Elanvital, which means soul or life force, and Enclave, which is about exclusivity. Elanvital Enclaves provides private, exclusive spaces and safe communities that raise the Filipino family’s quality of life. This philosophy is translated into the company’s logo, a parent and child shaped into a heart, fully knowing that it is the Filipinos’ love for family that serves as the topmost reason to dream bigger and invest in the future</p>
+        </article>
+
+            <div id="faqs" style="padding: 2rem; display: block;"></div>
+            <div class="value__container container grid">
+                <div class="value__images">
+
+                    <div class="Vicinity-container">
+                        <div class="vicinityMap">
+                            <img src="assets/img/vicinityMap.jpg" alt="">
+                            <span style="text-align: center;"><h2>Vicinity Map</h2></span>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+               
+
+                <div class="value__content">
+                    <div class="value__data">
+                        <span class="section__subtitle">FAQs</span>
+                        <h2 class="section__title">
+                            Frequently Asked Questions<span>.</span>
+                        </h2>
+                        <p class="value__description">
+                            These are the common inquiries raised by our clients regarding the Agapeya Townhouse project.
+                        </p>
+                    </div>
+
+                    <div class="value__accordion">
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class="bx bxs-info-circle value__accordion-icon"></i>
+                                <h3 class="value__accordion-title">
+                                    When is the turnover?
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class="bx bxs-down-arrow"></i>
+                                </div>
+                            </header>
+                        
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    10-12 months upon loan approval.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class="bx bxs-info-circle value__accordion-icon"></i>
+                                <h3 class="value__accordion-title">
+                                    How much is the move-in fees?
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class="bx bxs-down-arrow"></i>
+                                </div>
+                            </header>
+                        
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Php 15,000 (includes Meralco & water) with fill-up forms.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class="bx bxs-info-circle value__accordion-icon"></i>
+                                <h3 class="value__accordion-title">
+                                    How much to reserve the unit?
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class="bx bxs-down-arrow"></i>
+                                </div>
+                            </header>
+                        
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Php 30,000 cash out for reservation and processing fees.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class="bx bxs-info-circle value__accordion-icon"></i>
+                                <h3 class="value__accordion-title">
+                                    When is the start of monthly equity?
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class="bx bxs-down-arrow"></i>
+                                </div>
+                            </header>
+                        
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    30 days upon reservations.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class="bx bxs-info-circle value__accordion-icon"></i>
+                                <h3 class="value__accordion-title">
+                                    Is it allowed to have a co-borrower?
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class="bx bxs-down-arrow"></i>
+                                </div>
+                            </header>
+                        
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Yes, max of 1.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <!-- <div class="contact__images">
+                    <div class="contact__orbe"></div>
+
+                     <div class="contact__img">
+                        <img src="assets/img/contact.png" alt="">
+                    </div>
+                </div> -->
+
+                <div class="message-container">
+                    <!-- <h2 style="text-align: center; padding-bottom: 1rem; background-color: rgba(137, 43, 226, 0.265);">Message Us</h2> -->
+                    <form action="#" method="post">
+                      <div class="form-group">
+                        <label for="name">Your Name <span style="color: red;">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Your Email <span style="color: red;">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"></textarea>
+                      </div>
+                      <input type="submit" value="Send">
+                    </form>
+                  </div>
+
+                <div class="contact__content">
+                    <div class="contact__data">
+                        <span class="section__subtitle">Contact Us</span>
+                        <h2 class="section__title">
+                            Easy to Contact us<span>.</span>
+                        </h2>
+                        <p class="contact__description">
+                            Is there a problem finding your dream home? Need a
+                            guide in buying first home? or need a consultation
+                            on residential issues? just contact us.
+                        </p>
+                    </div>
+
+                    <div class="contact__card">
+                        <div class="contact__card-box">
+                            <div class="contact__card-info">
+                                <i class='bx bxs-phone-call'></i>
+
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Call
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        0945-118-5888
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button contact__card-button">
+                                Call Now
+                            </button>
+                        </div>
+
+                        <div class="contact__card-box">
+                            <div class="contact__card-info">
+                                <i class='bx bxl-facebook'></i>
+
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Chat
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        GOREALTY.PH
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button contact__card-button" onclick="window.location.href='https://www.facebook.com/GOREALTY.PH'">
+                                Chat Now
+                            </button>
+                            
+                        </div>
+
+                        <!-- <div class="contact__card-box">
+                            <div class="contact__card-info">
+                                <i class='bx bxs-video'></i>
+
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Video Call
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        022.321.165.19
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button contact__card-button">
+                                Video Call Now
+                            </button>
+                        </div> -->
+
+                        <!-- <div class="contact__card-box">
+                            <div class="contact__card-info">
+                                <i class='bx bxs-envelope'></i>
+
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Message
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        022.321.165.19
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button contact__card-button">
+                                Message Now
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SUBSCRIBE ====================-->
+        <!-- <section class="subscribe section">
+            <div class="subscribe__container container">
+                <h1 class="subscribe__title">
+                    Get Started with Holux
+                </h1>
+                <p class="subscribe__description">
+                    Subscribe and find super attractive price
+                    quotes from us, Find your residence soon
+                </p>
+                <a href="#" class="button subscribe__button">
+                    Get Started
+                </a>
+            </div>
+        </section> -->
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section" id="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <i class="bx bxs-heart"></i> Agapeya Towns
+                </a>
+                <p class="footer__description footer__copy">
+                    Our vision is to make all people <br>
+                    the best place to live for them.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        About Us
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#value" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#popular" class="footer__link">Features</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" class="footer__link">News & Blog</a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- <div>
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">How We Work?</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Capital</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Security</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div>
+                    <h3 class="footer__title">
+                        Support
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#faqs" class="footer__link">FAQs</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" class="footer__link">Support center</a>
+                        </li> -->
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Follow us
+                    </h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/profile.php?id=100036109676976" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=K0Pce_2j3Zs" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-youtube'></i>
+                        </a>
+                        <!-- <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-pinterest'></i>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                &#169; Agapeya. All rigths reserved
+            </span>
+
+            <!-- <div class="footer__privacy">
+                <a href="#">Terms & Agreements</a>
+                <a href="#">Privacy Policy</a>
+            </div> -->
+        </div>
+    </footer>
+        
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-chevrons-up'></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
