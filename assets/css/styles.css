@@ -1496,11 +1496,11 @@ input[type="submit"]:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  transition: visibility 0s, opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s;
+  transition: visibility 0s, opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s,
+    transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s;
   visibility: visible;
   opacity: 1;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  
 }
 
 .landmarks-container ul {
