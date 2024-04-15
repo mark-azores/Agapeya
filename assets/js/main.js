@@ -57,11 +57,11 @@ var swiperproperty = new Swiper(".property__container", {
   },
 });
 
-/*=============== VALUE ACCORDION ===============*/
-const accordionItems = document.querySelectorAll(".value__accordion-item");
+/*=============== about ACCORDION ===============*/
+const accordionItems = document.querySelectorAll(".about__accordion-item");
 
 accordionItems.forEach((item) => {
-  const accordionHeader = item.querySelector(".value__accordion-header");
+  const accordionHeader = item.querySelector(".about__accordion-header");
 
   accordionHeader.addEventListener("click", () => {
     const openItem = document.querySelector(".accordion-open");
@@ -75,7 +75,7 @@ accordionItems.forEach((item) => {
 });
 
 const toggleItem = (item) => {
-  const accordionContent = item.querySelector(".value__accordion-content");
+  const accordionContent = item.querySelector(".about__accordion-content");
 
   if (item.classList.contains("accordion-open")) {
     accordionContent.removeAttribute("style");
@@ -195,11 +195,11 @@ sr.reveal(
 );
 sr.reveal(`.home__description, .footer__info`, { delay: 500 });
 sr.reveal(`.home__search`, { delay: 600 });
-sr.reveal(`.home__value`, { delay: 700 });
+sr.reveal(`.home__about`, { delay: 700 });
 sr.reveal(`.home__images`, { delay: 800, origin: "bottom" });
 sr.reveal(`.logos__img`, { interval: 100 });
 sr.reveal(
-  `.value__images, .contact__content, .message-container, .landmarks-container`,
+  `.about__images, .contact__content, .message-container, .landmarks-container`,
   { origin: "left" }
 );
-sr.reveal(`.value__content, .contact__images`, { origin: "right" });
+sr.reveal(`.about__content, .contact__images`, { origin: "right" });
