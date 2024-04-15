@@ -43,8 +43,8 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*=============== SWIPER POPULAR ===============*/
-var swiperPopular = new Swiper(".popular__container", {
+/*=============== SWIPER property ===============*/
+var swiperproperty = new Swiper(".property__container", {
   spaceBetween: 32,
   grabCursor: true,
   centeredSlides: true,
@@ -191,7 +191,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home__title, .popular__container, .subscribe__container, .footer__container, .aboutUs, .home`
+  `.home__title, .property__container, .subscribe__container, .footer__container, .aboutUs, .home`
 );
 sr.reveal(`.home__description, .footer__info`, { delay: 500 });
 sr.reveal(`.home__search`, { delay: 600 });
