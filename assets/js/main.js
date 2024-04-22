@@ -186,7 +186,7 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
-  delay: 400,
+  delay: 500,
   //reset: true
 });
 
@@ -203,3 +203,19 @@ sr.reveal(
   { origin: "left" }
 );
 sr.reveal(`.about__content, .contact__images`, { origin: "right" });
+
+
+const title = document.querySelector('.home__description');
+const text = title.innerText.split('<br>').join('');
+title.innerHTML = '';
+
+let index = 0;
+function typeWriter() {
+    if (index < text.length) {
+        title.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 50); 
+    }
+}
+
+typeWriter();

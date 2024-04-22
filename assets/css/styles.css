@@ -336,7 +336,7 @@ body.dark-theme {
   rgba(255, 255, 255, 0.9) */
   background-color: white;
 
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .line {
@@ -356,7 +356,7 @@ body.dark-theme {
 }
 
 .SalesMap-container {
-  border: 2px solid #ccc; /* Example border style */
+  /* border: 2px solid #ccc; Example border style */
   border-radius: 10px; /* Example border radius */
   padding: 10px; /* Example padding */
 }
@@ -386,6 +386,11 @@ body.dark-theme {
 .home__container {
   padding-top: 4rem;
   row-gap: 3.5rem;
+  
+}
+
+#center {
+place-items: center;
 }
 
 .aboutUs {
@@ -446,6 +451,11 @@ body.dark-theme {
 
 /* NEW CODE */
 
+
+
+
+
+
 .home__title,
 .home__about-number {
   background: linear-gradient(
@@ -478,6 +488,10 @@ body.dark-theme {
   /* color: var(--text-color-light); */
   color: hsl(0deg 0% 56.69%);
   margin-bottom: 2rem;
+}
+
+.slideshow-container {
+  position: fixed;
 }
 
 .home__search {
@@ -530,7 +544,7 @@ body.dark-theme {
   position: relative;
   display: flex;
   justify-content: center;
-  padding-bottom: 5em;
+  margin-bottom: 5em;
 }
 
 .home__orbe {
@@ -581,8 +595,8 @@ body.dark-theme {
 /*=============== LOGOS ===============*/
 .logos__container {
   /* padding-top: 2rem; */
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem 2rem;
   justify-items: center;
 }
 
@@ -824,7 +838,7 @@ body.dark-theme {
 .contact__card-box {
   background-color: var(--body-color);
   border: 2px solid var(--border-color);
-  padding: 1.25rem 0.75rem;
+  padding: 1rem 0.25rem;
   border-radius: 0.5rem;
   transition: 0.3s;
 }
@@ -1050,7 +1064,7 @@ input[type="submit"]:hover {
 
 .footer__info {
   padding-bottom: 6rem;
-  margin-top: 5.5rem;
+  margin-top: 2rem;
   flex-direction: column;
   text-align: center;
   row-gap: 1.5rem;
@@ -1320,10 +1334,10 @@ input[type="submit"]:hover {
     /* padding-top: -20rem; */
     column-gap: 2rem;
   }
-
+/* 
   .home__data {
     padding-bottom: 4rem;
-  }
+  } */
 
   .home__title {
     margin-bottom: 2rem;
@@ -1418,7 +1432,7 @@ input[type="submit"]:hover {
   }
 
   .contact__card-box {
-    padding: 28px 1.5rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
 
   .subscribe__container {
@@ -1490,7 +1504,8 @@ input[type="submit"]:hover {
 }
 
 .landmarks-container {
-  max-width: 900px;
+  max-width: 90%;
+  line-height: 2rem;
   margin: 20px auto;
   padding: 0 20px;
   display: grid;
@@ -1519,7 +1534,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 600px) {
   .landmarks-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 0 10px;
     margin-left: 10px;
     margin-right: 10px;
