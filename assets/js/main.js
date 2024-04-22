@@ -204,18 +204,17 @@ sr.reveal(
 );
 sr.reveal(`.about__content, .contact__images`, { origin: "right" });
 
-
-const title = document.querySelector('.home__description');
-const text = title.innerText.split('<br>').join('');
-title.innerHTML = '';
+const title = document.querySelector(".home__description");
+const text = title.innerText.split("<br>").join("");
+title.innerHTML = "";
 
 let index = 0;
 function typeWriter() {
-    if (index < text.length) {
-        title.innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeWriter, 50); 
-    }
+  if (index < text.length) {
+    title.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 50);
+  }
 }
 
 typeWriter();
