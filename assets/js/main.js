@@ -186,20 +186,20 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
-  delay: 500,
-  //reset: true
+  delay: 500
+  // reset: true
 });
 
 sr.reveal(
-  `.home__title, .property__container, .subscribe__container, .footer__container, .aboutUs, .home`
+  `.home__title, .property__container, .subscribe__container, .footer__container, .aboutUs, .home, .property, .floorPlan`
 );
 sr.reveal(`.home__description, .footer__info`, { delay: 500 });
 sr.reveal(`.home__search`, { delay: 600 });
 sr.reveal(`.home__about`, { delay: 700 });
 sr.reveal(`.home__images`, { delay: 800, origin: "bottom" });
-sr.reveal(`.logos__img`, { interval: 100 });
+sr.reveal(`.logos__img`, { interval: 50 });
 sr.reveal(
-  `.about__images, .contact__content, .message-container, .landmarks-container`,
+  `.about__images, .contact__content, .message-container, .landmarks-container, .card, .list-group`,
   { origin: "left" }
 );
 sr.reveal(`.about__content, .contact__images`, { origin: "right" });

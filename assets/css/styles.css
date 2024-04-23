@@ -398,8 +398,8 @@ body.dark-theme {
 }
 
 .aboutUs p {
-  margin: 1rem;
-  padding: 1rem;
+  /* margin: 1rem;
+  padding: 1rem; */
   text-align: justify;
 }
 
@@ -452,7 +452,7 @@ body.dark-theme {
 /* NEW CODE */
 
 .card {
-  background-color: #ffffff;
+  border: 2px solid rgb(237, 237, 237);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
