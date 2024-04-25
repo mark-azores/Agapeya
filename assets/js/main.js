@@ -191,7 +191,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home__title, .property__container, .subscribe__container, .footer__container, .aboutUs, .home, .property, .floorPlan`
+  `.home__title, .property__container, .subscribe__container, .footer__container, .aboutUs, .home, .property, .floorPlan, .gImg`
 );
 sr.reveal(`.home__description, .footer__info`, { delay: 500 });
 sr.reveal(`.home__search`, { delay: 600 });
@@ -218,3 +218,51 @@ function typeWriter() {
 }
 
 typeWriter();
+
+
+let body = document.querySelector("body"),
+    lightBox = document.querySelector(".lightBox"),
+    img = document.querySelectorAll(".gImg"),
+    showImg = lightBox.querySelector(".showImg img"),
+    close = lightBox .querySelector(".close");
+
+   for (let image of img) {
+     image.addEventListener("click", ()=>{
+       showImg.src = image.src;
+       lightBox.style.display = "block";
+       body.style.overflow = "hidden";
+       close.onclick = ()=>{
+         lightBox.style.display = "none";
+         body.style.overflow = "visible";
+       };
+     });
+   }
+
+
+
+  //  DOWNLOAD IMAGE BUTTON
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the download icon element
+    var downloadIcon = document.querySelector(".download-icon");
+    
+    // Add click event listener
+    downloadIcon.addEventListener("click", function () {
+        // Get the image URL
+        var imageUrl = document.querySelector(".showImg img").src;
+        
+        // Create a link element
+        var link = document.createElement("a");
+        link.href = imageUrl;
+        
+        // Set the download attribute to force download
+        link.setAttribute("download", "");
+        
+        // Append the link to the body and click it programmatically
+        document.body.appendChild(link);
+        link.click();
+        
+        // Clean up: remove the link from the body
+        document.body.removeChild(link);
+    });
+});
