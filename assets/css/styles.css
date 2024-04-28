@@ -914,7 +914,7 @@ body.dark-theme {
   width: calc(100% - 40px); /* Consider margin in width calculation */
   margin: 20px;
   padding: 20px;
-  background-color: #fff;
+  border: solid 1px #ee82ee;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Include padding and border in width calculation */
@@ -935,7 +935,8 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ee82ee;
+  background: transparent;
   border-radius: 5px;
   resize: both; /* Allow resizing */
 }
@@ -945,7 +946,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #007bff;
+  background-color: var(--first-color);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -1044,7 +1045,7 @@ input[type="submit"]:hover {
 
 .footer__content {
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem 4rem;
+  gap: 2.5rem 3rem;
 }
 
 .footer__title {
@@ -1672,7 +1673,7 @@ section .lightBox .showImg{
 }
 section .image-gallery{
   max-width: 1300px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
   background: #ffffff00;
   margin: auto;
